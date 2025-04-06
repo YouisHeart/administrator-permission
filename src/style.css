@@ -1,0 +1,16 @@
+/* styles.css 或其他 CSS 文件 */
+@import "tailwindcss";
+
+@theme {
+  --color-myblue-50: #eef2ff;
+  --color-myblue-100: #e0e7ff;
+  --color-myblue-200: #c7d2fe;
+  --color-myblue-300: #a5b4fc;
+  --color-myblue-400: #818cf8;
+  --color-myblue-500: #6366f1;
+  --color-myblue-600: #4f46e5;
+  --color-myblue-700: #4338ca;
+  --color-myblue-800: #3730a3;
+  --color-mygreen-300: #f9bc69;
+  --color-mygreen-400:#42b883
+}
