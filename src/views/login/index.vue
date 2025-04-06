@@ -3,7 +3,7 @@
     <div class="flex justify-center items-center bg-white rounded-2xl overflow-hidden" style="width: 800px; height: 500px;">
       <!-- 左侧图片 -->
       <div class="flex-1 h-full overflow-hidden">
-        <img src="@/assets/images/pexels-athena-1586795.jpg" class="h-full w-full object-cover" loading="lazy" />
+        <img src="@/assets/images/pexels-athena-1586795.jpg" class="h-full w-full object-cover" loading="lazy" decoding="async" />
       </div>
 
       <!-- 右侧表单 -->
