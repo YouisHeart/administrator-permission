@@ -16,8 +16,7 @@ export default {
       meta: {
         title: "默认首页",
         isShow: true,
-      },
-      children: [],
+      }
     },
     {
       path: "/p",
@@ -88,8 +87,7 @@ export default {
       meta: {
         title: "角色模块",
         isShow: true,
-      },
-      children: [],
+      }
     },
     {
       path: "/auth",
@@ -99,7 +97,6 @@ export default {
         title: "权限模块",
         isShow: true,
       },
-      children: [],
     },
   ],
 };
