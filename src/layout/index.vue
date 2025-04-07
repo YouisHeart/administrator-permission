@@ -16,6 +16,10 @@
             </el-aside>
 
             <el-main>
+                <el-breadcrumb :separator-icon="ArrowRight" class="mb-5">
+                    <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
+                    <el-breadcrumb-item></el-breadcrumb-item>
+                </el-breadcrumb>
                 <router-view></router-view>
             </el-main>
         </el-container>
@@ -25,6 +29,7 @@
 <script setup>
 import {useRouter,useRoute} from 'vue-router'
 import Header from './components/Header.vue'
+import { ArrowRight } from '@element-plus/icons-vue'
 
 const router = useRouter()
 const route = useRoute()

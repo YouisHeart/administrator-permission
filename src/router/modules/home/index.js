@@ -1,18 +1,75 @@
+import component from "element-plus/es/components/tree-select/src/tree-select-option.mjs";
+
 export default {
   path: "/",
-  name: "layout",
+  name: "Home",
   component: () => import("@/layout/index.vue"),
-  meta: {},
+  meta: {
+    role: ["common", "admin"],
+    parentRouter: "Home",
+  },
   children: [
     {
       path: "/",
-      name: "home",
+      name: "HomePage",
       component: () => import("@/views/home/index.vue"),
       meta: {
-        title: "项目介绍",
+        title: "默认首页",
         isShow: true,
       },
       children: [],
+    },
+    {
+      path: "/p",
+      name: "ParentPage",
+      meta: {
+        isShow: true,
+        title: "父菜单",
+      },
+      children: [
+        {
+          path: "/p/child1",
+          name: "Child1Page1",
+          meta: {
+            isShow: true,
+            title: "子菜单1",
+          },
+        },
+        {
+          path: "/p/child2",
+          name: "Child1Page2",
+          meta: {
+            isShow: true,
+            title: "子菜单2",
+          },
+        },
+        {
+          path: "/p/child3",
+          name: "Child1Page3",
+          meta: {
+            isShow: true,
+            title: "子菜单3",
+          },
+        },
+        {
+          path: "/p/child4",
+          name: "Child1Page4",
+          meta: {
+            isShow: true,
+            title: "子菜单4",
+          },
+        },
+      ],
+    },
+    {
+      path: "/project",
+      name: "projectPage",
+      component: () => import("@/views/project/index.vue"),
+      meta: {
+        title: "项目模块",
+        isShow: true,
+        parentRouter: "Home",
+      },
     },
     {
       path: "/user",
